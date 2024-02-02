@@ -25,8 +25,8 @@ function displayResults(result) {
 document.addEventListener('input', function() {
     const searchTerm = searchInput.value.toLowerCase(); /* toLowercase para ficar tudo minúsculo */
     if (searchTerm === '') {  /* 2 == significa comparação, se são iguais; 3 === significa comparação, se são iguais e do mesmo tipo */
-       resultPlaylist.classList.add('hidden'); /* hidden significa esconder*/
-       resultsArtist.classList.remove('hidden');
+       resultPlaylist.classList.remove('hidden'); /* hidden significa esconder*/
+       resultsArtist.classList.add('hidden');
         return;
     }
 
